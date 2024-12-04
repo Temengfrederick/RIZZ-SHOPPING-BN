@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+      }
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .cart-item:last-child {
+        border-bottom: none;
+      }
+      .item-details {
+        flex-grow: 1;
+      }
+      .item-price {
+        margin-left: 10px;
+      }
+      .total {
+        font-weight: bold;
+        text-align: right;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #218838;
+      }
+      @media (max-width: 600px) {
+        .cart-item {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .item-price {
+          margin-left: 0;
+          margin-top: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Your Shopping Cart</h2>
+      <div class="cart-item">
+        <div class="item-details">Amari Denim Jeans</div>
+        <div class="item-price">$100.00</div>
+      </div>
+      <div class="cart-item">
+        <div class="item-details">Ralph Lauren club T-shirt</div>
+        <div class="item-price">$150.00</div>
+      </div>
+      <div class="cart-item">
+        <div class="item-details">Rick Owens hightop shoes</div>
+        <div class="item-price">$200.00</div>
+      </div>
+      <div class="total">Total: $450.00</div>
+      <button class="btn" onclick="checkout()">Checkout</button>
+    </div>
+    <script>
+      function checkout() {
+        alert("Proceeding to checkout...");
+        // Additional checkout functionality can be added here
+      }
+    </script>
+  </body>
+</html>

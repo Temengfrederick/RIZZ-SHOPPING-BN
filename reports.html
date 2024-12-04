@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMS Dashboard - Reports</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Rizz Shipping & Shopiing Hub Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="signup.php">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="reports-overview">
+            <u><h2>Reports Overview</h2></u>
+            <p>Generate and view various reports related to stock levels, and view detailed reports to whether products have been delivered or not. Below are some common report summaries and options to generate new reports.</p>
+        </section>
+        <section class="reports-summary">
+           <h3>Report Summaries</h3>
+            <div class="report-summary">
+                <h4>Store Summary</h4>
+                <p>A summary report of current inventory status, including stock levels, categories, and locations.</p>
+                <a href="#">View Report</a>
+            </div>
+            <div class="report-summary">
+                <h4>Order Summary</h4>
+                <p>A summary of all orders, including status, amounts, and customer information.</p>
+                <a href="#">View Report</a>
+            </div>
+            <div class="report-summary">
+                <h4>Store Activity</h4>
+                <p>A report of recent store activities, including shipments, receipts, and adjustments.</p>
+                <a href="#">View Report</a>
+            </div>
+        
+        </section>
+        <section class="generate-report">
+            <h3>Generate New Report</h3>
+            <form action="#" method="post">
+                <label for="report-type">Report Type:</label>
+                <select id="report-type" name="report-type" required>
+                    <option value="inventory">sotre Report</option>
+                    <option value="orders">Orders Report</option>
+                    <option value="activity">store Activity Report</option>
+                </select>
+                
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+                
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" required>
+                
+                <button type="submit">Generate Report</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rizz Shipping & Shopiing Hub Dashboard. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WMS Site</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Rizz Shipping & Shopping Hub Dashboard</h1>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="login.php">logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="store-reports-overview">
+        <h2>store Reports Overview</h2>
+        <p>
+          Manage and view store reports here. Use the options below to generate
+          new reports or view existing ones.
+        </p>
+        <img
+          src="C:\Users\HOME\Desktop\PROJECTS\RIZZ SHOPPING\images\images.png"
+          alt="Inventory Overview"
+          class="overview-image"
+        />
+      </section>
+      <section class="Store-reports-search">
+        <h3>Search Reports</h3>
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-query"
+            placeholder="Search reports..."
+          />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <section class="store-reports-list">
+        <h3>Existing Store Reports</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Report ID</th>
+              <th>Report Name</th>
+              <th>Date Generated</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Stock Levels</td>
+              <td>2024-07-20</td>
+              <td>Completed</td>
+              <td><a href="#">Download</a> | <a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Stock Valuation</td>
+              <td>2024-07-15</td>
+              <td>Completed</td>
+              <td><a href="#">Download</a> | <a href="#">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="generate-report">
+        <h3>Generate New Report</h3>
+        <form action="#" method="post">
+          <label for="report-name">Report Name:</label>
+          <input type="text" id="report-name" name="report-name" required />
+
+          <label for="report-type">Report Type:</label>
+          <select id="report-type" name="report-type" required>
+            <option value="stock-levels">Stock Levels</option>
+            <option value="valuation">Stock Valuation</option>
+            <option value="movement">Stock Movement</option>
+          </select>
+
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" name="start-date" required />
+
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date" name="end-date" required />
+
+          <button type="submit">Generate Report</button>
+        </form>
+      </section>
+      <section class="export-options">
+        <h3>Export Reports</h3>
+        <button id="export-pdf">Export as PDF</button>
+        <button id="export-excel">Export as Excel</button>
+      </section>
+      <section class="report-visuals">
+        <h3>Visualize Reports</h3>
+
+        <p>
+          <img
+            src="C:\Users\HOME\Desktop\PICTURES\Twitter\IMG_1834.JPG"
+            alt="Stock Valuation Chart"
+            class="report-image"
+          />
+        </p>
+      </section>
+      <section class="store-reports-search">
+        <h3>Search Reports</h3>
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-query"
+            placeholder="Search reports..."
+          />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <section class="pagination">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-info">Page 1 of 5</span>
+        <button id="next-page">Next</button>
+      </section>
+      <section class="export-options">
+        <h3>Export Reports</h3>
+        <button id="export-pdf">Export as PDF</button>
+        <button id="export-excel">Export as Excel</button>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2 class="logo">Rizz Shipping & Shopping Hub Dashboard</h2>
+            <p>
+              Efficiently manage your warehouse operations with our
+              comprehensive warehouse management system.
+            </p>
+            <div class="socials">
+              <a href="#" target="_blank" class="social-icon"
+                ><img
+                  src="C:\Users\HOME\Desktop\PICTURES\Twitter\IMG_2074.JPG"
+                  alt="Desktop"
+              /></a>
+              <a href="#" target="_blank" class="social-icon"
+                ><img
+                  src="C:\Users\HOME\Desktop\PICTURES\Twitter\IMG_1233.jpg"
+                  alt="Desktop"
+              /></a>
+              <a href="#" target="_blank" class="social-icon"
+                ><img
+                  src="C:\Users\HOME\Desktop\PICTURES\Twitter\IMG_2002.JPG"
+                  alt="Desktop"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="store.html">Store</a></li>
+              <li><a href="orders.html">Orders</a></li>
+              <li><a href="reports.html">Reports</a></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> support@Rizzshipping&shoppinghub.com</p>
+            <p><strong>Phone:</strong> +233 554-580-772</p>
+            <p><strong>Address:</strong> 123 Pokuase, Accra,Ghana</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Rizz Shipping & Shopping Hub Dashboard. All rights
+            reserved.
+          </p>
+          <button id="scroll-to-top" title="Scroll to Top">↑</button>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+  </body>
+</html>
